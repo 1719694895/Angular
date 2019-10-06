@@ -1,0 +1,17 @@
+[
+    {
+        "name": "feier",
+        "age": 19,
+        "college": "小学"
+    },
+    {
+        "name": "waner",
+        "age": 19,
+        "college": "中学"
+    },
+    {
+        "name": "yuer",
+        "age": 19,
+        "college": "大学"
+    }
+]

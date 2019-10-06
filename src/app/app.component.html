@@ -1,0 +1,11 @@
+<h1>
+  {{title}}
+</h1>
+<h2>
+  <!-- 两个组件公用的接口 -->
+  <!-- <app-home [person]="person" (onYell)="yell()">哪些年和你追的梦</app-home> -->
+</h2>
+<a [routerLink]="['/']">home</a><br>
+<a [routerLink]="['directory','hello']">directory</a>
+<a [routerLink]="['directory']" [queryParams]="{person:1123}">directory</a>
+<router-outlet></router-outlet> 

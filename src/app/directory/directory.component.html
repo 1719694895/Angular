@@ -1,0 +1,26 @@
+<p [ngClass]="classes">
+    directory works!
+</p>
+<form id="form">
+    <label>输入内容</label>
+    <input type="text" [(ngModel)]="val" name="aaa">
+</form>
+<p [ngClass]="{'red': data==''}">{{data}}</p>
+<p [ngClass]="{'red': data2=='111'}">{{data2}}</p>
+<p [ngClass]="{'red': data3==''}">{{data3}}</p>
+
+<p *ngIf="data!=null">{{data | uppercase}}</p>
+<p *ngIf="data2!=null">{{data2 | slice:2}}</p>
+<p *ngIf="data3!=null">{{data3}}</p>
+<hr>
+<div *ngFor="let item of ss | filter:val">
+    
+    <div *ngIf="item!=''">
+        <span style="background-color: crimson">{{item.name}}</span> 
+        <!-- <span >{{item.college}}</span> -->
+        <span style="background-color: aqua">{{item.age}}</span>
+        <span  style="background-color: brown">{{item.college}}</span>
+    </div>
+    
+</div>
+<button (click)="logIt()">Log Me</button>

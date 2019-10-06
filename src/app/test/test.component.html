@@ -1,0 +1,11 @@
+<p>test works!</p>
+<!-- 使用数据 {{}}-->
+<h2>{{homeTitle}}</h2>
+
+<input value={{myString}}>
+<input [value]="myString">
+
+<!-- 双向数据绑定 -->
+<input [(ngModel)]="person.name">
+
+<span>{{person.name}}</span>
