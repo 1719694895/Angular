@@ -30,3 +30,12 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 # Angular
 Angular study
 >>>>>>> 32e605e3d245675a76a3cf3f660a692d515c7dd0
+
+记录下：! [rejected] master -> master (non-fast forward)错误信息
+1、git pull origin master --allow-unrelated-histories //把远程仓库和本地同步，消除差异
+
+2、重新add和commit相应文件
+
+3、git push origin master
+
+4、此时就能够上传成功了
